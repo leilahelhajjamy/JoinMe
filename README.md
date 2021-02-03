@@ -16,15 +16,15 @@ Home
 
 Shared Location
 
-![alt text](https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/shared locations.jpeg)
+![alt text](https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/shared%20locations.jpeg)
 
 Share location
 
-![alt text](https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/location share.jpeg)
+![alt text](https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/location%20share.jpeg)
 
 Add event/post
 
-![alt text](https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/add event.jpeg)
+![alt text](https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/add%20event.jpeg)
 
 Messages
 
@@ -36,9 +36,9 @@ Conversation
 
 Visit Profil
 
-![alt text](https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/visit profil.jpeg)
+![alt text](https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/visit%20profil.jpeg)
 
 Followers list
 
-![alt text](https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/followers list.jpeg)
+![alt text](https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/followers%20list.jpeg)
 
