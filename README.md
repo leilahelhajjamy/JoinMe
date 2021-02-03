@@ -14,6 +14,10 @@ Home
 
 ![alt text](https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/home.jpeg)
 
+List of likers
+
+![alt text](https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/listelikers.jpg)
+
 Shared Location
 
 ![alt text](https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/shared%20locations.jpeg)
