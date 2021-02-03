@@ -1,9 +1,9 @@
-JoinMe
+#JoinMe
 this is my first app using Ionic framework , firebase, and Google APIs
 here are some screens of the final result
 
 
-Inscriptio page 
+Inscription page 
 ![alt text](https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/insciptionn.jpg)
 Connexion 
 
