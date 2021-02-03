@@ -1,0 +1,112 @@
+
+
+<ion-content padding class="myview">
+ 
+
+  <div class="wellmove" padding>
+
+
+
+
+
+  <form [formGroup]="formPost">
+
+
+    <div class="row justify-content-center" >
+      <div class="flex-button">
+      <button class="submitbutton" (click)="addPhoto('library')"><ion-icon color="background" name="ios-image"></ion-icon><p class="insta-text-post"></p></button>
+    
+      <button  class="submitbutton" (click)="addPhoto('camera')"><ion-icon color="background"  name="ios-camera"></ion-icon><p class="insta-text-post"></p></button>
+      
+    </div> </div>
+  <div class="container">
+        <img  *ngIf = 'image' [src]="image" > 
+        <button   *ngIf = 'image && !uploaded'  (click)="uploadFirebase()" class="btn"><ion-icon  color="background" name="cloud-upload"></ion-icon></button>
+      
+      </div>
+
+<br>
+    <div class="form-group">     
+      <textarea  name="Post" formGroupName="Post" formControlName="Post" [(ngModel)]="Post" class=" form-control Post" id="exampleFormControlPost" rows="3" placeholder="Description"></textarea>
+      <br>
+      </div>
+
+    <div class="form-group">
+
+     
+      <textarea name="localisation"  type="text" formGroupName="localisation"  formControlName="localisation" [(ngModel)]="localisation" class="form-control" id="localisation" aria-describedby="localisation" placeholder="Enter an address">
+      </textarea>
+      </div>
+
+
+    <div class="form-group">
+
+     
+      <input name="city"  type="text" formGroupName="city"  formControlName="city" [(ngModel)]="city" class="form-control" id="city" aria-describedby="city" placeholder="Enter a city">
+    </div> 
+
+    <div class="form-group">
+    
+     <input name="datedebut"  type="date" formGroupName="datedebut"  formControlName="datedebut" [(ngModel)]="datedebut" class="form-control" id="datedebut" aria-describedby="datedebut" placeholder="jj/mm/aaaa">
+   
+    </div>
+
+   
+
+  <br>
+ 
+  <div class="row justify-content-center">
+  <!-- <button  class="submitbutton"  (click)="uploadFirebase()">Add this image<p class="insta-text-post"></p></button> -->
+  </div>
+  <br>
+  
+ 
+<div class="row justify-content-center">
+
+
+
+    <div class="form-group">
+      <h6 class="nameProfile" >Start at</h6>
+      <select  [(ngModel)]="time" class="form-control" id="exampleFormControlSelect1" formControlName="time">
+        <option value="08:00">08:00</option>
+        <option value="09:00">09:00</option>
+        <option value="10:00">10:00</option>
+        <option value="11:00">11:00</option>
+        <option value="12:00">12:00</option>
+        <option value="13:00">13:00</option>
+        <option value="14:00">14:00</option>
+        <option value="15:00">15:00</option>
+        <option value="16:00">16:00</option>
+        <option value="17:00">17:00</option>
+        <option value="18:00">18:00</option>
+      </select>
+    </div>
+  
+  </div>
+ 
+
+  
+  <div  class="row justify-content-center"> 
+  <div class="flex-button">
+  <button class="submitbutton"  type="submit"  (click)="AddPost(Post,datedebut,time,localisation,city)">Publish</button>
+  </div>
+</div>
+  </form>
+
+
+
+
+
+
+    
+ <div>
+ 
+ 
+ 
+
+ </div>
+
+
+</div>
+
+</ion-content>

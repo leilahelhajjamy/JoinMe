@@ -1,0 +1,98 @@
+
+
+
+<ion-content padding class="myview">
+ 
+
+  <div class="text_stories">
+    
+    <p> <a (click)='VisitProfile(currentUser)'><ion-icon name="chatbox"></ion-icon>My Profile</a></p>
+    
+     <p> <a (click)='Messages()'><ion-icon   name="paper-plane"></ion-icon>Messages</a></p>
+    
+    
+  </div>
+
+  <div class="wellwhite">
+  <br>
+  <div class="stories">
+  <div class="story">
+    <div class="add_story">
+      <img  *ngIf=photoURL   [src]="photoURL" >
+      <button (click)="ShareLocation()"><ion-icon color="primary" name="add-circle"></ion-icon></button>
+    </div>
+    <p style="color: #86888f;">{{firstName}}</p>
+  </div>
+
+
+<div  *ngFor="let item of Locations">
+  <div class="story">
+    <div class="img-box">
+      <img *ngIf=item.photoURL [src]="item.photoURL">
+    </div>
+    <a (click)="seeDetailsLocations(item.idLocation)"><p>{{item.firstName}}</p></a>
+  </div>
+</div>
+
+</div>
+</div>
+<hr>
+
+<div *ngFor="let item of Events" >
+
+ 
+  <div class="wellwhite" padding> 
+   
+ <div class="row justify-content-left">
+    <ion-avatar slot="start">
+      <img *ngIf=item.photoURL [src]="item.photoURL">
+    </ion-avatar>
+   <a (click)='VisitProfile(item.author)'><ion-label>{{item.firstName}} {{item.lastName}}</ion-label></a>
+    
+  </div>
+ 
+  <img class="post_img" *ngIf=item.photoEvent [src]="item.photoEvent">
+  <div class="flex-button">
+    <div>
+
+      <div  *ngIf=" ( isLiked(item.key) && item.isLiked ) ;then unLikeButton  else LikeButton    " class="container justify-content-center" PADDING>
+       </div>
+
+      <ng-template #LikeButton>
+      <button  (click)='Like(item.key,item.author,item.firstName,item.lastName,item.localisation)'><ion-icon name="ios-star-outline"></ion-icon></button>
+      </ng-template>
+      <ng-template #unLikeButton>
+      <button  (click)='UnLike(item.key)' ><ion-icon name="ios-star"></ion-icon></button>
+      </ng-template>
+
+      <div  *ngIf="(isJoined(item.key) && item.isJoined  ) ;then unJoinButton  else JoinButton    " class="container justify-content-center" PADDING>
+      </div>
+
+     <ng-template #JoinButton>
+     <button  (click)='Join(item.key,item.author,item.firstName,item.lastName,item.localisation)'><ion-icon name="ios-briefcase-outline"></ion-icon></button>
+     </ng-template>
+     <ng-template #unJoinButton>
+     <button  (click)='UnJoin(item.key)' ><ion-icon name="ios-briefcase"></ion-icon></button>
+     </ng-template>
+    
+     <button (click)="presentJoiningsModal(item.key)"><p class="insta-text"><b>{{getTotalJoinings(item.key)}} joined</b></p></button>
+  
+
+</div>
+    
+  </div>
+
+  <div class="flex-button">
+
+  <button (click)="presentLikesModal(item.key)"><p class="insta-text"><b>{{getTotalLikes(item.key)}} stars</b></p></button>
+  </div>  
+  <p padding class="insta-text">  {{item.datedebut}} at {{item.time}} </p> 
+  <p class="insta-text"><b>{{item.firstName}} {{item.lastName}}</b> {{item.text}} </p>
+ 
+
+</div>
+  <br>
+
+</div>
+
+</ion-content>

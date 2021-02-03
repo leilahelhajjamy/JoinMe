@@ -1,0 +1,38 @@
+
+
+<ion-content  class="myview" padding>
+    
+   
+  <img src="../../assets/imgs/logo.png" height= "50"  width="50"  style="display: inline-block;">
+
+    <div class="container-fluid">
+      <div class="row justify-content-center" >
+        
+<br>
+<br>
+<br>
+    <form [formGroup]="formregister" >
+
+  
+      <div class="form-group">
+       
+        <input  type="email" formGroupName="email"  formControlName="email" [(ngModel)]="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      </div>
+    
+      <div class="form-group">
+        <input   type="password" formGroupName="password" formControlName="password" [(ngModel)]="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        <br>  </div>
+    
+    
+   <button type="submit" class="submitbutton" (click)="LoginUser()">Submit</button>
+   <button type="submit" class="submitbutton" (click)="GoRegister()">Register</button>
+   <br>
+   <a (click)="resetPassword()"> <p>Forgot Password </p></a>
+     
+    </form>
+   
+  </div>
+</div>
+
+
+</ion-content>

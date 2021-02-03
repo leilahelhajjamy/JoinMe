@@ -1,0 +1,52 @@
+
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>Register</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content  class="myview" padding>
+    
+   
+  <img src="../../assets/imgs/logo.png" height= "50"  width="50"  style="display: inline-block;">
+
+    <div class="container-fluid">
+      <div class="row justify-content-center" >
+        
+<br>
+<br>
+<br>
+    <form [formGroup]="formregister" >
+
+      <div class="form-group">
+       
+        <input  type="email" formGroupName="firstName"  formControlName="firstName" [(ngModel)]="firstName" class="form-control" id="exampleInputfirstName" aria-describedby="firstName" placeholder="Enter your first name">
+      </div>
+
+      <div class="form-group">
+       
+        <input  type="email" formGroupName="lastName"  formControlName="lastName" [(ngModel)]="lastName" class="form-control" id="exampleInputlastName" aria-describedby="lastName" placeholder="Enter your last name">
+      </div>
+
+      <div class="form-group">
+       
+        <input  type="email" formGroupName="email"  formControlName="email" [(ngModel)]="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      </div>
+    
+      <div class="form-group">
+        <input   type="password" formGroupName="password" formControlName="password" [(ngModel)]="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        <br>  </div>
+    
+   
+
+   <button type="submit" class="submitbutton" (click)="RegisterUser(city)">Submit</button>
+   <button type="submit" class="goback" (click)="goBack()">GoBack</button>
+     
+    </form>
+   
+  </div>
+</div>
+
+
+</ion-content>

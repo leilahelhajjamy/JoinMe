@@ -1,0 +1,170 @@
+<!--
+  Generated template for the MyprofilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>myprofile</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+
+<ion-content mode="ios"  class="myview" padding >
+  <br>
+   
+      <div class="welltransparent ">
+        <div class="row justify-content-center">
+        
+    <img class="card-img profileImage" src="../../assets/imgs/8.jpeg" alt="Card image cap">
+  </div>
+    <div class="card-body">
+      
+      <h5 class="nameProfile" style="text-align: center;">{{firstName}} {{lastName}}</h5>
+     
+      </div>
+    
+  
+      <div class="row justify-content-center">
+  
+    </div>
+  
+    
+      
+    <br>
+  
+  </div>
+  
+  
+  <div></div>
+  
+  
+    <div class="wellmove">
+  
+    <ion-segment  [(ngModel)]="timeline" color="item" (ionChange)="segmentChanged($timeline)" scrollable>
+      <ion-segment-button value="globe">
+        <ion-icon name="globe" color="item"></ion-icon>
+      </ion-segment-button>
+  
+      <ion-segment-button value="followers">
+        <ion-icon name="heart" color="item"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="following">
+        <ion-icon name="person" color="item"></ion-icon>
+      </ion-segment-button>
+      
+    </ion-segment>
+  </div>
+  
+  
+      <BR>
+      
+  
+  
+    <div [ngSwitch]="timeline" >
+    
+      <div *ngSwitchCase="'globe'" class="wellwhite" >
+        <div>
+            
+            
+              <div *ngFor="let item of Timeline">
+            
+               
+                <img class="post_img" src="../../assets/imgs/post_1.jpg">
+                <div class="flex-button">
+                  <div>
+              
+                    <div  *ngIf=" ( isLiked(item.key) && item.isLiked ) ;then unLikeButton  else LikeButton    " class="container justify-content-center" PADDING>
+                     </div>
+              
+                    <ng-template #LikeButton>
+                    <button  (click)='Like(item.key,item.author,item.firstName,item.lastName,item.localisation)'><ion-icon name="ios-star-outline"></ion-icon></button>
+                    </ng-template>
+                    <ng-template #unLikeButton>
+                    <button  (click)='UnLike(item.key)' ><ion-icon name="ios-star"></ion-icon></button>
+                    </ng-template>
+              
+                    <div  *ngIf="(isJoined(item.key) && item.isJoined  ) ;then unJoinButton  else JoinButton    " class="container justify-content-center" PADDING>
+                    </div>
+              
+                   <ng-template #JoinButton>
+                   <button  (click)='Join(item.key,item.author,item.firstName,item.lastName,item.localisation)'><ion-icon name="ios-briefcase-outline"></ion-icon></button>
+                   </ng-template>
+                   <ng-template #unJoinButton>
+                   <button  (click)='UnJoin(item.key)' ><ion-icon name="ios-briefcase"></ion-icon></button>
+                   </ng-template>
+                   <button><p class="insta-text"><b>{{item.joinings}} will join</b></p></button>
+                
+              
+              </div>
+                  
+                </div>
+              
+                <div class="flex-button">
+              
+                <button><p class="insta-text"><b>{{item.totalLikes}} stars</b></p></button>
+              </div>  
+               <p padding  class="insta-text"><b></b> {{item.text}} </p>
+              
+              
+              </div>
+                
+              
+              </div>
+  
+            </div>
+  
+  
+         
+      
+  
+      <ion-list *ngSwitchCase="'followers'" class="welltransparent">
+        
+        <div *ngFor="let item of followers"> 
+          <div class="wellwhite" padding >
+          <div class="row justify-content-left">
+           
+            <ion-avatar slot="start">
+              <img src="../../assets/imgs/8.jpeg">
+            </ion-avatar>
+            <a (click)='VisitProfile(item.uid)'><p class="name" > <ion-label>{{item.firstName}} {{item.lastName}}</ion-label></p></a>
+                   
+          </div>
+        </div>
+  
+        </div> 
+       
+      </ion-list>
+  
+  
+  
+  
+      <ion-list *ngSwitchCase="'following'" class="welltransparent">
+        
+        <div *ngFor="let item of followings"> 
+          <div class="wellwhite" padding >
+          <div class="row justify-content-left">
+           
+            <ion-avatar slot="start">
+              <img src="../../assets/imgs/8.jpeg">
+            </ion-avatar>
+            <a (click)='VisitProfile(item.uid)'><p class="name" > <ion-label>{{item.firstName}} {{item.lastName}}</ion-label></p></a>
+                   
+          </div>
+        </div>
+  
+        </div> 
+       
+      </ion-list>
+  
+  
+  
+  
+    </div> 
+  
+  
+  
+  
+  </ion-content>

@@ -1,0 +1,17 @@
+
+.followings p {
+    color: #f797bc;
+    margin: 8px 0px 0px 0px;
+} 
+
+.followings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.space-between {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 0px 10px;
+}

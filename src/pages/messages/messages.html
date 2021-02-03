@@ -1,0 +1,33 @@
+<ion-header>
+  
+   
+</ion-header>
+<ion-content class="myview" padding>
+
+
+  <br>
+  <div *ngFor="let conversation of conversations">
+  <ion-item  color ="item" (click)="openConversation(conversation.talkwith)">
+  
+    <ion-label>
+      <div class="flex_box">
+        <ion-avatar slot="start">
+          <img [src]="conversation.photoURL">
+        </ion-avatar>
+        <a ><ion-label>{{conversation.firstName}} {{conversation.lastName}}</ion-label><br></a>
+       </div>
+       <div><h5 class="text-message">{{conversation.text}}</h5></div>
+       <div><h5 class="text-message">{{conversation.date}}</h5> </div>
+       
+     
+     
+     
+    </ion-label>
+  </ion-item>
+  
+</div>
+    
+    
+
+
+</ion-content>

@@ -1,0 +1,515 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+
+.container {
+  position: relative;
+  width: 300px;
+
+  border: 2px solid   #f797bc;
+  border-radius: 25 px;
+
+}
+
+/* Make the image responsive */
+.container img {
+  width: 300px;
+  height: 150px;
+  
+}
+
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #7d0f5d;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container .btn:hover {
+  background-color: #f797bc;
+}
+
+
+.myview {
+
+    background-color: #7d0f5d;
+    
+    }
+    
+    input[type="email"]{
+    
+        background-color :   white;
+    
+    
+        border: 2px solid   #f797bc;
+        
+      height :40px !important;
+      border-radius : 25px;
+      
+      
+      }
+    
+   
+      input[type="date"]{
+    
+        background-color :   white;
+    
+        border: 2px solid   #f797bc;
+        
+        height :40px !important;
+      border-radius: 25px;
+     
+      
+      }
+      select{
+    
+        background-color :   white;
+    
+        border: 2px solid   #f7ecff;
+        
+        height :40px !important;
+      border-radius: 25px;
+      
+     
+      }
+    
+      input[type="text"]{
+    
+        background-color :   white;
+    
+        border: 2px solid   #f797bc;
+        height :40px !important;
+      border-radius: 25px;
+     
+      
+      }
+    
+      input[type="password"]{
+    
+        background-color : white;
+    
+        border: 2px solid  #f797bc;
+        height :40px !important;
+      border-radius: 25px;
+    
+      
+      }
+      input[type="submit"]{
+        border: 2px solid   #f797bc;
+      border-radius:0px 25px 25px 0px;
+      height :40px !important;
+   
+      }
+
+     textarea {
+        background-color : white;
+    
+        border: 2px solid   #f797bc !important;
+        
+      border-radius: 25px;
+      }
+    
+    
+      .well {
+    
+        background-image: linear-gradient(to right, #f99ce8 , #7dc6f3);
+        background-color :  #f7ecff;
+    
+        
+    
+      border-radius: 25px;
+    
+      }
+    
+
+      .wellRight {
+    
+       
+        background-color :   #f797bc;
+        
+        border-radius: 25px;
+        text-align: right;
+    
+      }
+
+
+      .wellLeft {
+    
+       
+        background-color :  #f797bc;
+        
+        border-radius: 25px;
+        text-align: left;
+        
+    
+      }
+
+
+      .wellRightConversation {
+    
+       
+        background-color : #7d0f5d;
+        
+        border-radius: 25px;
+        text-align: right;
+        
+    
+      }
+      .wellLeftConversation{
+    
+       
+        background-color :  #7d0f5d;
+        
+        border-radius: 25px;
+        text-align: left;
+        
+    
+      }
+
+
+
+
+      .inwelltitre{
+    
+        color: white;
+      }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .submitbutton{
+    color:white ;
+    background-color: #9E8BFD;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 15px;
+    
+    }
+    .goback{
+        color:white ;
+        background-color:  #9E8BFD;
+        padding: 15px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+        border-radius: 15px;
+    
+    }
+    
+    div {
+      background-image:  #DAADF6;
+    }
+    
+    
+    
+    .buttonsacceuill{
+    
+    
+      color:white ;
+      background-color:  #f4c0ea;
+      padding: 15px 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 12px;
+      border-radius: 15px;
+    
+    }
+
+    .buttonfollow{
+    
+    
+      color:#7d0f5d ;
+      background-color:  #ec90db;
+      padding: 15px 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 12px;
+      border-radius: 15px;
+    
+    }
+
+    .buttonsacceuillbleu{
+    
+    
+      color:white ;
+      background-color:  #f99ce8;
+      padding: 15px 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 12px;
+      border-radius: 25px;
+    
+    }
+    
+
+    .buttonCercle{
+            background-color:  #f99ce8;
+            width: 50px; 
+            height: 50px; 
+            padding: 10px 16px; 
+            border-radius: 35px; 
+            font-size: 12px; 
+            text-align: center;
+            z-index:4;
+            background-image: linear-gradient(to right , #7dc6f3, #f99ce8);
+
+    }
+
+    
+    .wellwhite{
+    
+      
+      background-color :    #f797bc;
+    
+    border-radius: 15px;
+    
+    }
+
+
+    .wellmove{
+    
+      
+      background-color :   #7d0f5d;
+    
+    border-radius: 15px;
+    
+    }
+
+
+
+    .wellrose{
+    
+      
+      background-color :    #f99ce8;
+    
+    border-radius: 15px;
+    
+    }
+    
+
+    .welltransparent{
+    
+      
+    background-color :    #ec90db;
+    
+    border-radius: 15px;
+   
+    
+    }
+    
+    
+    .buttonsacceuild{
+    
+    
+      color:white ;
+      background-color:  #f99ce8;
+      padding: 15px 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 12px;
+      border-radius: 15px;
+    
+    }
+    
+
+
+    
+    .buttonsacceuildd{
+    
+    
+      color:white ;
+      background-color:   #7dc6f3;
+      padding: 15px 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 12px;
+      border-radius: 15px;
+    
+    }
+
+
+
+    .buttonleft{
+    
+    
+      color:#f99ce8 ;
+      background-color:   #f7ecff;
+      padding: 15px 15px;
+      text-align: left;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 12px;
+      border-radius: 20px;
+    
+    }
+
+
+
+    .buttonright{
+    
+    
+      color:white ;
+      background-color: #f797bc;
+      padding: 15px 15px;
+      text-align: left;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 12px;
+      border-radius:20px;
+    
+    }
+    
+    
+    .alertClass{
+    
+      border-radius: 5 px !important; }
+      .alert-title{
+    
+          color : white;
+      
+      }
+      .alert-sub-title{
+    
+              color : white;
+    
+          }
+      
+    
+    
+          .alert-wrapper {
+             
+            background-color: #EBD8F9;
+            }
+    
+    
+    .footer{
+      z-index:8;
+      background-color: rgba(255, 255, 255, 0);
+
+    }
+    
+    .rounded {
+      padding-left: 20px;
+      padding-right: 20px;
+      box-shadow: 0 0px 20px 0 rgba(0,0,0,0);
+     background-image: linear-gradient(to right, #f5aee9 , #a4d5f6);
+      transition: 0.3s;
+      border-radius: 25%;
+      border-collapse: separate;
+   }
+.profileImage{
+
+  border-radius: 50%;
+  height: 130px;
+  width: 130px;
+  border: 4px solid #f797bc;
+  
+}
+
+.nameProfile{
+  
+  color :#f797bc;
+}
+
+
+.name{
+  
+  color :#f797bc;
+}
+
+
+.roundedImage{
+
+  border-radius: 15%;
+  height: 30px;
+  width: 30px;
+  
+}
+
+
+
+.mycustom {
+  border: solid 1px green;
+  position: relative;
+}
+.mycustom input[type=text] {
+  border: none;
+  width: 100%;
+  padding-right: 123px;
+}
+.mycustom .input-group-prepend {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  bottom: 4px;z-index:9;
+}
+    
+.buttonsacceuildprepend{
+
+  
+  color:white ;
+  background-color:  #f99ce8;
+  border-radius: 15px;
+}
+
+.bottom{
+
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -104.5px; /*104.5px is half of the button's width*/
+}

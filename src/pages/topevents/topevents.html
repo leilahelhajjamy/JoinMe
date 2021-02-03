@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Top Events</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="myview">
+
+
+
+<div class="welltransparent"> 
+  <br>
+    <div class="stories">
+   
+  
+      <div *ngFor="let item of TopEvents" >
+        <div class="wellwhite" padding> 
+  
+      <div class="story">
+        <div class="img-box">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80">
+        </div>
+        <p>{{item.firstName}} {{item.lastName}} </p>
+      </div>
+  
+    </div>
+  
+  </div>
+     
+    </div>
+  
+  </div>
+
+
+</ion-content>

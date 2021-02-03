@@ -1,0 +1,90 @@
+<!--
+  Generated template for the ConversationPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <div class="text_stories">
+    <div class="flex-button">
+      <p> <a (click)='Messages()'><ion-icon name="chatbox"></ion-icon>Back</a></p>   
+      
+      <a (click)='VisitProfile(uid)'><ion-label>{{userfirstName}} {{userlastName}}</ion-label></a>
+  </div>
+    <p></p>
+ </div>
+
+</ion-header>
+
+<ion-content #content (ionScroll)="scrollHandler($event)" padding class ="myview">
+
+ 
+
+  <div class ="stream myview" *ngIf="messageExist">
+
+ 
+  <ion-list  no-lines *ngIf="connected">
+    <ion-item   class ="myview" *ngFor="let message of messagesExistants">
+      <div  slot="left" class="wellLeftConversation" *ngIf="message.sender !=currentUser"><ion-badge text-wrap class="buttonleft"  >{{ message.text }} </ion-badge></div>
+      <div slot="right" class="wellRightConversation"  *ngIf="message.sender == currentUser"><ion-badge  text-wrap class="buttonright"  >{{ message.text }}  </ion-badge></div>
+     
+    </ion-item>
+
+
+  </ion-list>
+
+</div>
+
+
+<div class ="stream myview" *ngIf="!messageExist">
+
+  <ion-list  no-lines *ngIf="connected">
+    <ion-item class ="myview"  *ngFor="let message of messages">
+      <div  slot="left" class="wellLeftConversation"  *ngIf="message.sender !=currentUser"><ion-badge text-wrap class="buttonleft" >{{ message.text }} </ion-badge></div>
+      
+      <div  slot="right" class="wellRightConversation"  *ngIf="message.sender == currentUser"><ion-badge  text-wrap class="buttonright"  >{{ message.text }} </ion-badge></div>
+    
+    </ion-item>
+    </ion-list>
+  </div>
+
+
+</ion-content>
+
+
+
+<ion-footer padding class ="myview"  >
+  <div *ngIf="!messageExist">
+  <form   [formGroup]="formMessage" >
+   
+    <div  class="col-lg-10 mb-3">
+      <div class="input-group ">
+        <input type="text" text-wrap formControlName="Message" [(ngModel)]="Message"  style="height:40px" class="form-control heighttext"  id="validationDefaultUsername" placeholder="" aria-describedby="inputGroupPrepend2" required>
+        <div class="input-group-prepend">
+         <a (click)="SendMessage()"> <input type="submit"  style="height:40px" value ="send" class="buttonsacceuildprepend" id="inputGroupPrepend2"> </a>
+        </div>
+      </div>
+    </div>
+  
+  </form>
+</div>
+
+
+<div *ngIf="messageExist">
+  <form   [formGroup]="formMessage" >
+   
+    <div  class="col-lg-10 mb-3">
+      <div class="input-group ">
+        <input type="text" text-wrap  formControlName="Message" [(ngModel)]="Message"  style="height:40px" class="form-control heighttext"  id="validationDefaultUsername" placeholder="" aria-describedby="inputGroupPrepend2" required>
+        <div class="input-group-prepend">
+         <a (click)="SendMessageExistant()"> <input type="submit"  style="height:40px" value ="send" class="buttonsacceuildprepend" id="inputGroupPrepend2"> </a>
+        </div>
+      </div>
+    </div>
+  
+  </form>
+</div>
+
+
+
+</ion-footer>

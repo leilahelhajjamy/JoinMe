@@ -1,0 +1,73 @@
+<ion-header>
+  
+   
+</ion-header>
+<ion-content class="myview" padding>
+
+
+  <br>
+  <button class="submitbutton" (click)="Send()"><ion-icon color="background"  name="send-outline"></ion-icon>Invite</button>
+  
+  <br>
+
+  <div *ngFor="let item of followers">
+
+  <div *ngIf="!item.selected;then selectthis else unselectthis" ></div> 
+  <ng-template #selectthis>
+  <ion-item  color ="item" (click)="Select(item.uid,item.firstName,item.lastName,item.photoURL)">
+  
+  
+    <ion-label>
+      <div class="flex_box">
+        <ion-avatar slot="start">
+          <img [src]="item.photoURL">
+        </ion-avatar>
+        <a ><ion-label>{{item.firstName}} {{item.lastName}}</ion-label><br></a>
+      
+        <div  *ngIf=" item.selected; then selected else unselected   " class="container justify-content-center" PADDING>
+        </div>
+  
+       <ng-template #selected>
+       <button ><ion-icon color="background" name="checkmark-circle"></ion-icon></button>
+       </ng-template>
+       <ng-template #unselected>
+       <button  ><ion-icon  color="item"  name="checkmark-circle-outline"></ion-icon></button>
+       </ng-template></div>
+    
+    </ion-label>
+  </ion-item>
+  </ng-template>
+
+  <ng-template #unselectthis>
+    <ion-item  color ="item" (click)="unSelect(item.uid)">
+      <ion-label>
+        <div class="flex_box">
+          <ion-avatar slot="start">
+            <img [src]="item.photoURL">
+          </ion-avatar>
+          <a ><ion-label>{{item.firstName}} {{item.lastName}}</ion-label><br></a>
+        
+          <div  *ngIf=" item.selected; then selected else unselected   " class="container justify-content-center" PADDING>
+          </div>
+    
+         <ng-template #selected>
+         <button ><ion-icon color="background" name="checkmark-circle"></ion-icon></button>
+         </ng-template>
+         <ng-template #unselected>
+         <button  ><ion-icon color="item"  name="checkmark-circle-outline"></ion-icon></button>
+         </ng-template></div>
+      
+      </ion-label>
+    </ion-item>
+    </ng-template>
+  
+
+  
+ 
+  
+</div>
+    
+    
+
+
+</ion-content>

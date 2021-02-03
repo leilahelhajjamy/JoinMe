@@ -1,0 +1,24 @@
+
+<ion-content padding class="myview">
+
+<div class="wellwhite" padding>
+<div *ngFor='let item of Invitations'>
+
+  <div class="row justify-content-left">
+         
+    <ion-avatar slot="start">
+      <img [src]="item.senderPhotoURL">
+    </ion-avatar>
+    <a (click)='VisitProfile(item.senderUid )'><p class="name" > <ion-label>{{item.senderFirstName}} {{item.senderLastName}}</ion-label></p></a>
+    <p class="insta-text">Invited you to an  <a (click)="seeDetails(item.idEvent)"><b>event</b></a> </p>
+     <p class="insta-text"> {{item.date}}</p>  
+  
+
+</div> 
+
+
+</div>
+
+</div>
+
+</ion-content>

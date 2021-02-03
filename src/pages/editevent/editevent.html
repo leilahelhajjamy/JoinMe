@@ -1,0 +1,131 @@
+
+
+<ion-content padding class="myview">
+ 
+
+  
+
+<div class="wellmove" padding>
+<div class="row justify-content-center" >
+
+
+  <form [formGroup]="formPost"padding>
+    <div class="form-group">
+
+     
+      <input name="localisation" [value]="PostData.localisation" type="text" formGroupName="localisation"  formControlName="localisation" [(ngModel)]="localisation" class="form-control" id="localisation" aria-describedby="localisation" placeholder="Enter a localisation">
+    </div>
+
+    <div class="form-group">
+
+     
+      <input type ="hidden"  name="author" [value]="PostData.author"  formGroupName="author"  formControlName="author" [(ngModel)]="author" class="form-control" id="author" aria-describedby="author" placeholder="Enter a localisation">
+    </div>
+    <div class="form-group">
+
+     
+      <input type ="hidden"  name="firstName" [value]="PostData.firstName"  formGroupName="firstName"  formControlName="firstName" [(ngModel)]="firstName" class="form-control" id="firstName" aria-describedby="firstName" placeholder="Enter a localisation">
+    </div>
+    <div class="form-group">
+
+     
+      <input  type ="hidden"  name="lastName" [value]="PostData.lastName"  formGroupName="lastName"  formControlName="lastName" [(ngModel)]="lastName" class="form-control" id="lastName" aria-describedby="lastName" placeholder="Enter a localisation">
+    </div>
+    <div class="form-group">
+
+     
+      <input type ="hidden"  name="photoURL" [value]="PostData.photoURL"  formGroupName="photoURL"  formControlName="photoURL" [(ngModel)]="photoURL" class="form-control" id="photoURL" aria-describedby="photoURL" placeholder="Enter a localisation">
+    </div>
+    <div class="form-group">
+
+     
+      <input  type ="hidden"  name="createdAt" [value]="PostData.createdAt"  formGroupName="createdAt"  formControlName="createdAt" [(ngModel)]="createdAt" class="form-control" id="createdAt" aria-describedby="createdAt" placeholder="Enter a localisation">
+    </div>
+    <div class="form-group">
+
+     
+      <input type ="hidden" name="idEvent" [value]="PostData.idEvent"  formGroupName="idEvent"  formControlName="idEvent" [(ngModel)]="idEvent" class="form-control" id="idEvent" aria-describedby="idEvent" placeholder="Enter a localisation">
+    </div>
+
+    <div class="form-group">
+     
+     <input name="datedebut" [value]="PostData.datedebut"  type="date" formGroupName="datedebut"  formControlName="datedebut" [(ngModel)]="datedebut" class="form-control" id="datedebut" aria-describedby="datedebut" placeholder="Enter a date">
+   
+    </div>
+
+    <div class="row justify-content-center" padding>
+    <div class="flex-button">
+    <button  (click)="addPhoto('library')"><ion-icon name="ios-image"></ion-icon><p class="insta-text-post"></p></button>
+  
+    <button  (click)="addPhoto('camera')"><ion-icon name="ios-camera"></ion-icon><p class="insta-text-post"></p></button>
+    <button  (click)="addPhoto('camera')"><ion-icon name="ios-pin"></ion-icon><p class="insta-text-post"></p></button>
+  
+  </div> </div>
+  
+  
+  <div class="flex">
+    <div class="img-box">
+      <img [src]="PostData.photoEvent">
+    </div>
+  </div>
+  <br>
+   
+  <div class="row justify-content-center">
+  <button  class="submitbutton"  (click)="uploadFirebase()">Add image<p class="insta-text-post"></p></button>
+</div>
+
+
+  <div class="form-group">     
+  <input [value]="PostData.text" id="move" name="Post" formGroupName="Post" formControlName="Post" [(ngModel)]="Post" class=" form-control Post" id="exampleFormControlPost" rows="3" placeholder="Description">
+  <br>
+  </div>
+ 
+<div class="row justify-content-center">
+
+
+
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">Start at</label>
+      <select [value]="PostData.time" [(ngModel)]="time" class="form-control" id="exampleFormControlSelect1" formControlName="time">
+        <option value="08:00">08:00</option>
+        <option value="09:00">09:00</option>
+        <option value="10:00">10:00</option>
+        <option value="11:00">11:00</option>
+        <option value="12:00">12:00</option>
+        <option value="13:00">13:00</option>
+        <option value="14:00">14:00</option>
+        <option value="15:00">15:00</option>
+        <option value="16:00">16:00</option>
+        <option value="17:00">17:00</option>
+        <option value="18:00">18:00</option>
+      </select>
+    </div>
+  
+  </div>
+ 
+
+  
+  <div  class="row justify-content-center"> 
+  <div class="flex-button">
+  <button  class="submitbutton" type="submit"  (click)="  AddPost(Post,datedebut,time,localisation)">Publish</button>
+  </div>
+</div>
+  </form>
+
+
+
+
+
+
+    
+ <div>
+ 
+ 
+ 
+
+ </div>
+</div>
+</div>
+
+
+</ion-content>

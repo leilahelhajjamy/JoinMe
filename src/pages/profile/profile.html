@@ -1,0 +1,45 @@
+<!--
+  Generated template for the ProfilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>profile</ion-title>
+    <h4>Welcome {{userConnected}}</h4>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="myview">
+
+  <div>
+    <!-- <ul>
+      <li *ngFor="let item of people | async">
+         {{ item.username}}
+      </li>
+    </ul> -->
+    <form [formGroup]="formupdate" >
+
+      <div class="form-group">
+       
+      <input  type="text" formGroupName="username" formControlName="username" [(ngModel)]="username" class="form-control" id="exampleInputUsername"  placeholder="Enter username">
+      </div>
+
+
+      <!-- <div class="form-group">
+       
+        <input  type="number" formGroupName="phoneNumber"  formControlName="phoneNumber" [(ngModel)]="phoneNumber" class="form-control" id="exampleInputphoneNumber" aria-describedby="phoneNumber" placeholder="Enter phone Number">
+      </div> -->
+    
+      <div class="form-group">
+        <input   type="text" formGroupName="photoURL" formControlName="photoURL" [(ngModel)]="photoURL" class="form-control" id="exampleInputphotoURL" placeholder="photoURL">
+        <br>  </div>
+    
+        <button type="submit" class="submitbutton" (click)="UpdateUser(username,photoURL)">Submit</button>
+  
+    
+    </form> 
+  </div>
+
+</ion-content>

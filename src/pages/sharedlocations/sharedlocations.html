@@ -1,0 +1,29 @@
+
+
+   <ion-content padding  class="myview"> 
+   
+      <button class="submitbutton"  (click)="back()">back</button>
+     
+   <div padding class="wellwhite">
+
+    <div class="row justify-content-left">
+       <ion-avatar slot="start">
+         <img [src]="LocationData.photoURL">
+       </ion-avatar>
+      <a (click)='VisitProfile(LocationData.author)'><ion-label>{{LocationData.firstName}} {{LocationData.lastName}} </ion-label></a>
+     
+     
+     </div>
+
+     <div class="wellwhite">
+     <p class="insta-text">{{LocationData.adresse}} at {{LocationData.date}}   <a (click)='seeMap(LocationData.lat,LocationData.lng)'><ion-icon name="pin"></ion-icon></a></p> 
+    </div>
+
+    
+     <p class="insta-text"><b>{{LocationData.firstName}} {{LocationData.lastName}}</b> {{LocationData.description}} </p>
+    
+     <div  *ngIf="seenClicked" id='map'></div>
+  
+    </div>
+
+</ion-content>

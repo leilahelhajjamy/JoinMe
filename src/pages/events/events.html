@@ -1,0 +1,54 @@
+
+<ion-content padding class="myview">
+
+    <div class="wellwhite" padding>
+<div class="row justify-content-left">
+    <ion-avatar slot="start">
+      <img *ngIf=Event.photoURL [src]="Event.photoURL">
+    </ion-avatar>
+   <a (click)='VisitProfile(Event.author)'><ion-label>{{Event.firstName}} {{Event.lastName}}</ion-label></a>
+    
+  </div>
+ 
+  <img class="post_img" *ngIf=Event.photoEvent [src]="Event.photoEvent">
+  <div class="flex-button">
+    <div>
+
+      <div  *ngIf=" ( isLiked(Event.key) && Event.isLiked ) ;then unLikeButton  else LikeButton    " class="container justify-content-center" PADDING>
+       </div>
+
+      <ng-template #LikeButton>
+      <button  (click)='Like(Event.key,Event.author,Event.firstName,Event.lastName,Event.localisation)'><ion-icon name="ios-star-outline"></ion-icon></button>
+      </ng-template>
+      <ng-template #unLikeButton>
+      <button  (click)='UnLike(Event.key)' ><ion-icon name="ios-star"></ion-icon></button>
+      </ng-template>
+
+      <div  *ngIf="(isJoined(Event.key) && Event.isJoined  ) ;then unJoinButton  else JoinButton    " class="container justify-content-center" PADDING>
+      </div>
+
+     <ng-template #JoinButton>
+     <button  (click)='Join(Event.key,Event.author,Event.firstName,Event.lastName,Event.localisation)'><ion-icon name="ios-briefcase-outline"></ion-icon></button>
+     </ng-template>
+     <ng-template #unJoinButton>
+     <button  (click)='UnJoin(Event.key)' ><ion-icon name="ios-briefcase"></ion-icon></button>
+     </ng-template>
+     <button  (click)='invite(Event.key)' ><ion-icon name="paper-plane"></ion-icon></button>
+     <button (click)="presentJoiningsModal(Event.key)"><p class="insta-text"><b>{{getTotalJoinings(Event.key)}} joined</b></p></button>
+  
+
+</div>
+    
+  </div>
+
+  <div class="flex-button">
+
+  <button (click)="presentLikesModal(Event.key)"><p class="insta-text"><b>{{getTotalLikes(Event.key)}} stars</b></p></button>
+  </div>  
+  <p padding class="insta-text">  {{Event.datedebut}} at {{Event.time}} </p> 
+  <p class="insta-text"><b>{{Event.firstName}} {{Event.lastName}}</b> {{Event.text}} </p>
+ 
+
+</div>
+
+</ion-content>
