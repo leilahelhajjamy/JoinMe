@@ -38,7 +38,7 @@ Visit Profil
 
 ![alt text](https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/visit%20profil.jpeg)
 
-Followers list
+Following list
 
 ![alt text](https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/followers%20list.jpeg)
 
