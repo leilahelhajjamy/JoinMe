@@ -12,33 +12,33 @@ Connexion
 
 Home
 
-![alt text](https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/home.jpg)
+![alt text](https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/home.jpeg)
 
 Shared Location
 
-![alt text](https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/shared locations.jpg)
+![alt text](https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/shared locations.jpeg)
 
 Share location
 
-![alt text](https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/location share.jpg)
+![alt text](https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/location share.jpeg)
 
 Add event/post
 
-![alt text](https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/add event.jpg)
+![alt text](https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/add event.jpeg)
 
 Messages
 
-![alt text](https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/messages.jpg)
+![alt text](https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/messages.jpeg)
 
 Conversation
 
-![alt text](https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/conversation.jpg)
+![alt text](https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/conversation.jpeg)
 
 Visit Profil
 
-![alt text](https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/visit profil.jpg)
+![alt text](https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/visit profil.jpeg)
 
 Followers list
 
-![alt text](https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/followers list.jpg)
+![alt text](https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/followers list.jpeg)
 
