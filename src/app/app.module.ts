@@ -66,13 +66,13 @@ import { InvitationsPage } from '../pages/invitations/invitations';
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC9bNiRRAJk-SrEX9RnTpUrE2Cb2iQUIkI",
+  apiKey: "key here",
   authDomain: "joinmeapp-290cc.firebaseapp.com",
   databaseURL: "https://joinmeapp-290cc.firebaseio.com",
   projectId: "joinmeapp-290cc",
   storageBucket: "joinmeapp-290cc.appspot.com",
   messagingSenderId: "928853325812",
-  appId: "1:928853325812:web:56dc588c9ad32c4fd5aba1"
+  appId: "appId"
 };
 
 @NgModule({
