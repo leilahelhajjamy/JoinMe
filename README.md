@@ -5,33 +5,29 @@ here are some screens of the final result
 
 Home
 
-![alt text](https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/home.jpeg)
+<img src ="https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/home.jpeg" height ="630" width="300" />
 
 List of likers
 
-![alt text](https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/listelikers.jpg)
+<img src ="https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/listelikers.jpg" height ="630" width="300" />
 
 Shared Location
 
-![alt text](https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/shared%20locations.jpeg)
-
+<img src ="https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/shared%20locations.jpeg" height ="630" width="300" />
 Share location
 
-![alt text](https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/location%20share.jpeg)
-
+<img src ="https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/location%20share.jpeg" height ="630" width="300" />
 Messages
 
-![alt text](https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/messages.jpeg)
-
+<img src ="https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/messages.jpeg" height ="630" width="300" />
 Conversation
 
-![alt text](https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/conversation.jpeg)
+<img src ="https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/conversation.jpeg" height ="630" width="300" />
 
 Visit Profil
 
-![alt text](https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/visit%20profil.jpeg)
-
+<img src ="https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/visit%20profil.jpeg" height ="630" width="300" />
 Following list
 
-![alt text](https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/followers%20list.jpeg)
+<img src ="https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/followers%20list.jpeg" height ="630" width="300" />
 
