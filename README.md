@@ -3,9 +3,9 @@
 this is my first app using Ionic framework , firebase, and Google APIs
 
 # functions : Chat , Find and follow people , share location , add an event ,...
+ here are some screensots
 
-
-# Home
+# Home screen
 
 <img src ="https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/home.jpeg" height ="630" width="300" />
 
@@ -19,7 +19,7 @@ this is my first app using Ionic framework , firebase, and Google APIs
 # Share location
 
 <img src ="https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/location%20share.jpeg" height ="630" width="300" />
-Messages
+# Messages
 
 <img src ="https://github.com/leilahelhajjamy/JoinMe/blob/main/screens/messages.jpeg" height ="630" width="300" />
 # Conversation
