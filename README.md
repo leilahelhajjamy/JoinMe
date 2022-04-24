@@ -1,9 +1,4 @@
-# JoinMe
 
- my first app using Ionic framework , firebase, and Google APIs
-
-# functions : Chat , Find and follow people , share location , add an event ,...
- here are some screenshots
 
 # Home screen
 
